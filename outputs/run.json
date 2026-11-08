@@ -1,0 +1,31 @@
+{
+  "blueprint": {
+    "architecture_notes": "stub blueprint",
+    "critical_defects_remaining": 0,
+    "fused_mechanics": [],
+    "interaction_paradigm": "adaptive zero-latency optimistic UI",
+    "resolved_bugs": [
+      "stub resolved"
+    ]
+  },
+  "ledger": {
+    "thesis": "Fixing top complaints for shadow-fight creates category-leadership opening.",
+    "top_bugs": [
+      "stub bug for shadow-fight"
+    ],
+    "unmet_demands": [
+      "stub demand"
+    ]
+  },
+  "metrics": {
+    "churn_rate": 0.07999999821186066,
+    "cognitive_friction": 0.44999998807907104,
+    "edge_case_survival": 0.9100000262260437,
+    "task_velocity": 0.8700000047683716,
+    "viral_retention": 0.7200000286102295
+  },
+  "targets": [
+    "shadow-fight",
+    "parkour"
+  ]
+}

@@ -1,0 +1,23 @@
+[package]
+name = "ultimatrix-cli-mcp"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[[bin]]
+name = "ultimatrix"
+path = "src/main.rs"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+clap = { version = "4", features = ["derive"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+craft-core = { path = "../craft-core" }
+compatibility-gate = { path = "../compatibility-gate" }
+reverse-adapter = { path = "../reverse-adapter" }
+entrepreneur-rea = { path = "../entrepreneur-rea" }
+mirofish-crucible = { path = "../mirofish-crucible" }
+egm-architect = { path = "../egm-architect" }
+token-governance = { path = "../token-governance" }

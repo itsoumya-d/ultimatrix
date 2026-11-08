@@ -1,0 +1,5 @@
+{
+  "mode_a_single": ["https://example.com/app"],
+  "mode_b_fusion_ok": ["shadow-fight", "parkour"],
+  "mode_b_fusion_rejected": ["banking", "rhythm"]
+}
