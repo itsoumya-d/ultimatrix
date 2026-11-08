@@ -1,6 +1,6 @@
 // Integration: gate + orchestrator + fidelity end-to-end (dry).
-use craft_core::*;
 use compatibility_gate::*;
+use craft_core::*;
 
 #[test]
 fn demo_fusion_pair_passes() {
@@ -13,8 +13,18 @@ fn demo_fusion_pair_passes() {
         schema_fields: 10,
         concurrency_class: ConcurrencyClass::OneVsOne,
         monetization_loop: "saas".into(),
-        telemetry: InteractionTelemetry { session_length_secs: 100.0, inputs_per_min: 50.0, concurrent_controls: 2 },
-        visual_tokens: VisualTokens { heading_font: "Inter".into(), body_font: "Inter".into(), mono_font: "Mono".into(), accent_hex: "#000000".into(), radius_px: 8 },
+        telemetry: InteractionTelemetry {
+            session_length_secs: 100.0,
+            inputs_per_min: 50.0,
+            concurrent_controls: 2,
+        },
+        visual_tokens: VisualTokens {
+            heading_font: "Inter".into(),
+            body_font: "Inter".into(),
+            mono_font: "Mono".into(),
+            accent_hex: "#000000".into(),
+            radius_px: 8,
+        },
         state_machine_nodes: 20,
     };
     let r = score_pair(&make("shadow-fight"), &make("parkour"));
@@ -26,7 +36,9 @@ fn demo_fusion_pair_passes() {
 #[test]
 fn orchestrator_advances_all_stages() {
     let mut o = Orchestrator::default();
-    for s in Orchestrator::stage_order() { assert!(o.advance(s).is_ok()); }
+    for s in Orchestrator::stage_order() {
+        assert!(o.advance(s).is_ok());
+    }
     assert!(o.is_complete());
 }
 
